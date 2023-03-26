@@ -1,3 +1,3 @@
-namespace Swagger.Products;
+namespace ZipStreaming.Products;
 
 public record ProductDto(string CoolDescription);

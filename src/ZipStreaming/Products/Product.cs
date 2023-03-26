@@ -1,5 +1,5 @@
 using System;
 
-namespace Swagger.Products;
+namespace ZipStreaming.Products;
 
 public record Product(Guid Id, string Name);

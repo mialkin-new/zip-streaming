@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace Swagger.Products;
+namespace ZipStreaming.Products;
 
 [ApiController]
 [Route("[controller]")]
