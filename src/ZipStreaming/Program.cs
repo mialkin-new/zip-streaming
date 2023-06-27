@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using ZipStreaming.Providers;
 
 var builder = WebApplication.CreateBuilder(args);
 var services = builder.Services;
@@ -12,6 +13,9 @@ services.AddSwaggerGen(options =>
     options.DescribeAllParametersInCamelCase();
 });
 services.AddRouting(options => options.LowercaseUrls = true);
+
+services.AddSingleton<IDocumentsProvider, DocumentsProvider>();
+services.AddHttpClient();
 
 var app = builder.Build();
 
